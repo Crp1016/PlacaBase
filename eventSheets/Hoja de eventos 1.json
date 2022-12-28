@@ -1,0 +1,66 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón2",
+					"sid": 510499992151951
+				},
+				{
+					"id": "compare-selected-item-text",
+					"objectClass": "opciones",
+					"sid": 896197719090777,
+					"parameters": {
+						"text-to-compare": "\"Definiciones\"",
+						"case-sensitivity": "ignore-case"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 923067705604864,
+					"parameters": {
+						"layout": "Escena 2"
+					}
+				}
+			],
+			"sid": 821889391954203
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón2",
+					"sid": 306209484921089
+				},
+				{
+					"id": "compare-selected-item-text",
+					"objectClass": "opciones",
+					"sid": 280017449068224,
+					"parameters": {
+						"text-to-compare": "\"Señalar elementos\"",
+						"case-sensitivity": "ignore-case"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 290223175638903,
+					"parameters": {
+						"layout": "Escena 3"
+					}
+				}
+			],
+			"sid": 905239258922492
+		}
+	],
+	"sid": 893552942119105
+}

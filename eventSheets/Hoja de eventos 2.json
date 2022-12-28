@@ -1,0 +1,315 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "aciertosA",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 469344951024775
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 695096038840997,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 539800254635723,
+					"parameters": {
+						"layout": "Escena 1"
+					}
+				}
+			],
+			"sid": 371881404196184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 774597336052540
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "aciertosA",
+					"sid": 118468051871738,
+					"parameters": {
+						"text": "aciertosA"
+					}
+				}
+			],
+			"sid": 318349309980974
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tpch",
+					"sid": 921824861526624,
+					"parameters": {
+						"text": "\"PCH\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 148423577070674
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 291426185248342,
+					"parameters": {
+						"variable": "aciertosA",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 341520742830575
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tpcie",
+					"sid": 848427504488106,
+					"parameters": {
+						"text": "\"PCIe\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 971092917525108
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 274232814868327,
+					"parameters": {
+						"variable": "aciertosA",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 246390961622491
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tram",
+					"sid": 324844092743016,
+					"parameters": {
+						"text": "\"zócalos de memoria RAM\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 496306470987841
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 399250785965251,
+					"parameters": {
+						"variable": "aciertosA",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 947391768956594
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tsata",
+					"sid": 854074086819327,
+					"parameters": {
+						"text": "\"puertos SATA\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 269172861733970
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 442333909347702,
+					"parameters": {
+						"variable": "aciertosA",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 829385507929775
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tsocket",
+					"sid": 208729331064536,
+					"parameters": {
+						"text": "\"socket CPU\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 690456710345597
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 221896816913640,
+					"parameters": {
+						"variable": "aciertosA",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 488130367803452
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tvrm",
+					"sid": 427322030775876,
+					"parameters": {
+						"text": "\"VRM\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 493124276798629
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 292867598177216,
+					"parameters": {
+						"variable": "aciertosA",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 438020588066276
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 205391614008309,
+					"parameters": {
+						"variable": "aciertosA",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 992272351268724,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 644885853166589,
+					"parameters": {
+						"layout": "Escena 4"
+					}
+				}
+			],
+			"sid": 624870555535148
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 403845507354178,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 865576375535014,
+					"parameters": {
+						"variable": "aciertosA",
+						"value": "0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 355261506719656
+				}
+			],
+			"sid": 512608814824162
+		}
+	],
+	"sid": 767973350047720
+}

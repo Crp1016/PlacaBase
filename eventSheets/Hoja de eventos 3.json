@@ -1,0 +1,315 @@
+{
+	"name": "Hoja de eventos 3",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "aciertosB",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 952910518340214
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 692625065504370,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 238779178348071,
+					"parameters": {
+						"layout": "Escena 1"
+					}
+				}
+			],
+			"sid": 238542992843416
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 576520683576659
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "aciertosB",
+					"sid": 406192467383670,
+					"parameters": {
+						"text": "aciertosB"
+					}
+				}
+			],
+			"sid": 649205437800721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tpch",
+					"sid": 617062831140961,
+					"parameters": {
+						"text": "\"PCH\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 492920405169062
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 853080903019907,
+					"parameters": {
+						"variable": "aciertosB",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 932693256469634
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tpcie",
+					"sid": 661549998538206,
+					"parameters": {
+						"text": "\"PCIe\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 177725448521915
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 880815973179560,
+					"parameters": {
+						"variable": "aciertosB",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 733066155246161
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tram",
+					"sid": 201738482725401,
+					"parameters": {
+						"text": "\"zócalos de memoria RAM\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 226105372899511
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 527282893117901,
+					"parameters": {
+						"variable": "aciertosB",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 282171692165449
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tsata",
+					"sid": 860434222320461,
+					"parameters": {
+						"text": "\"puertos SATA\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 110349378214762
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 990198779165536,
+					"parameters": {
+						"variable": "aciertosB",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 430067610869913
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tsocket",
+					"sid": 294762906794142,
+					"parameters": {
+						"text": "\"socket CPU\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 252458385952085
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 214233504987824,
+					"parameters": {
+						"variable": "aciertosB",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 462975698719865
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "tvrm",
+					"sid": 888509060002274,
+					"parameters": {
+						"text": "\"VRM\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 981860233426759
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 716682070026989,
+					"parameters": {
+						"variable": "aciertosB",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 948276132382372
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 256189557035656,
+					"parameters": {
+						"variable": "aciertosB",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 305591385267184,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 220856599879202,
+					"parameters": {
+						"layout": "Escena 4"
+					}
+				}
+			],
+			"sid": 340528928187600
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 632587617954068,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 820612074525941,
+					"parameters": {
+						"variable": "aciertosB",
+						"value": "0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 634504801502400
+				}
+			],
+			"sid": 860995957243497
+		}
+	],
+	"sid": 363537237346298
+}
